@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<script src="/js/script.js" defer></script>
+		<title>Country</title>
+	</head>
+	<body class="">
+		<header class="header-container">
+			<div class="header-content">
+				<h2>where in the world?</h2>
+				<div class="toggle-mode toggle">
+					<p class="theme">
+						<ion-icon name="invert-mode"></ion-icon> &nbsp;mode
+					</p>
+					<!-- <p class="hidden"><ion-icon name="sunny-sharp"></ion-icon>&nbsp;&nbsp;light Mode</p> -->
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<!-- Search Bar & Dropdown -->
+				<div class="filter-container">
+					<div class="Search-container">
+						<ion-icon name="search-outline"></ion-icon>
+						<input
+							type="text"
+							placeholder="Search for a country..."
+							input-search
+						/>
+					</div>
+
+					<select class="btn-filter" btn-filter>
+						<option hidden>Filter by Region</option>
+						<option value="Africa">Africa</option>
+						<option value="America">America</option>
+						<option value="Asia">Asia</option>
+						<option value="Europe">Europe</option>
+						<option value="Oceania">Oceania</option>
+					</select>
+				</div>
+				<!-- countries card -->
+				<div class="countries-container" countries-container>
+					<!-- <a href="country-description" class="country-card">
+						<img src="https://flagcdn.com/is.svg" alt="flag" />
+						<div class="card-text">
+							<h3 class="card-title">iceland</h3>
+							<p><b>Population:</b>78978</p>
+							<p><b>Region: </b>Europe</p>
+							<p><b>Berlin:</b> Berlin</p>
+						</div>
+					</a> -->
+				</div>
+			</div>
+		</main>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>
